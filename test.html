@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/uikit.min.css">
+    <link rel="stylesheet" href="../static/css/components/slideshow.css">
+    <style>
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div style="width: 400px;">
+
+        <div data-uk-slideshow>
+            <ul class="uk-slideshow">
+                <li> <img src="../static/images/360wallpaper.jpg" alt=""> </li>
+                <li> <img src="../static/images/309789.jpg" alt=""> </li>
+            </ul>
+            <!-- genderless -->
+            <a href="" data-uk-slideshow-item="previous"><i class="uk-icon-cog uk-icon-angle-left"></i></a>
+            <a href="" data-uk-slideshow-item="next"><i class="uk-icon-cog uk-icon-angle-right"></i></a>
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-text-center">
+                <li data-uk-slideshow-item="0"><a href="#"><i class="uk-icon-cog uk-icon-circle"></i> </a></li>
+                <li data-uk-slideshow-item="1"><a href="#"><i class="uk-icon-cog uk-icon-circle"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="http://www.getuikit.net/vendor/jquery.js"></script>
+<script src="../static/js/uikit.js"></script>
+<script src="../static/js/components/slideshow.js"></script>

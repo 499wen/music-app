@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<title>Preload Ready</title>
+<script type="text/javascript">
+var audio = document.createElement("audio");
+audio.src = "./static/mp3/AMGU.mp3";
+
+// audio.addEventListener("canplaythrough",
+// function() {
+// 	alert('音频文件已经准备好，随时待命');
+// },
+// false);
+
+console.log(audio);
+function aPlay() {
+	// audio.play();
+    console.log(audio.playbackRate = 1.5)
+    console.log('时长' + audio.duration)
+    console.log(audio.play())
+}
+function aPause() {
+	audio.pause();
+}
+function aStop() {
+	audio.currentTime = 0;
+	audio.pause();
+}
+function aSkip() {
+    console.log(audio.playbackRate)
+	audio.currentTime = 50;
+	audio.play();
+ }
+    </script>
+</head>
+<body>
+<input type="button" onclick="aPlay();" value="播放音频">
+<input type="button" onclick="aPause();" value="暂停音频">
+<input type="button" onclick="aStop();" value="停止音频">
+<input type="button" onclick="aSkip();" value="跳到第50秒">
+</body>
+</html>

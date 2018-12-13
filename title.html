@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Welcome Index </title>
+    <link rel="stylesheet" href="../static/css/uikit.min.css">
+    <link rel="stylesheet" href="../static/css/components/slideshow.css">
+    <link rel="stylesheet" href="../static/css/components/slider.almost-flat.css">
+    <link rel="stylesheet" href="http://www.getuikit.net/docs/css/uikit.docs.min.css">
+    <!-- <link rel="stylesheet" href="http://www.getuikit.net/docs/css/docs.css"> -->
+    <link rel="stylesheet" href="http://www.getuikit.net/vendor/highlight/highlight.css">
+    <link rel="stylesheet" href="../static/css/self/title.css">
+    
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="uk-grid bgi">
+        <div class="uk-width-1-5"> <i class="uk-icon-large uk-icon-bars"></i> </div>
+        <div class="uk-width-1-5"> <span>我的</span> </div>
+        <div class="uk-width-1-5"> <span>推荐</span> </div>
+        <div class="uk-width-1-5"> <span>发现</span> </div>
+        <div class="uk-width-1-5"> <i class="uk-icon-large uk-icon-search"></i> </div>
+    </div>
+    <!-- 首页 - 导航 -->
+    <div class="uk-grid index-nav">
+        <div class="uk-width-1-5"> <span >首页</span> </div>
+        <div class="uk-width-1-5"> <span class="index-active">精选集</span> </div>
+        <div class="uk-width-1-5"> <span>排行版</span> </div>
+        <div class="uk-width-1-5"> <span>电台</span> </div>
+        <div class="uk-width-1-5"> <span>MV</span> </div>
+    </div>
+    <!-- 幻灯片 -->
+    <div class="index-sds">
+        <div class="uk-slidenav-position " data-uk-slideshow="{autoplay:true,animation:true}">
+            <ul class="uk-slideshow">
+                <li> <img src="../static/images/309789.jpg" alt=""> </li>
+                <li> <img src="../static/images/360wallpaper.jpg" alt=""> </li>
+            </ul>
+            <!-- class="uk-active" <i class="uk-icon-large uk-icon-circle"></i>-->
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-text-center">
+                <li data-uk-slideshow-item="0" ><a href="#">Item 0</a></li>
+                <li data-uk-slideshow-item="1"><a href="#">Item 1</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="http://www.getuikit.net/vendor/jquery.js"></script>
+<script src="../static/js/uikit.js"></script>
+<script src="../static/js/components/slideshow.js"></script>
+<!-- <script src="http://www.getuikit.net/vendor/highlight/highlight.js"></script> -->
+<script src="http://www.getuikit.net/docs/css/uikit.docs.min.css"></script>
+<script src="../static/js/components/slideshow-fx.js"></script>
